@@ -1,5 +1,6 @@
 <!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tradeball Statistik</title><script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script><script>(function(){if(!window.Chart)return;const RC=window.Chart,Q=[];window.__tbBoot=true;
+<title>Tradeball Statistik</title>
+<!-- build:5d51341-fallback --><script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script><script>(function(){if(!window.Chart)return;const RC=window.Chart,Q=[];window.__tbBoot=true;
 function C(el,cfg){if(!window.__tbBoot)return new RC(el,cfg);const s={a:[el,cfg],r:null,dead:0};Q.push(s);
 return new Proxy(s,{get(t,k){if(k==='destroy')return()=>{t.dead=1;if(t.r)t.r.destroy()};if(t.dead&&!t.r)return undefined;if(!t.r)t.r=new RC(...t.a);const v=t.r[k];return typeof v=='function'?v.bind(t.r):v},set(t,k,v){if(!t.r)t.r=new RC(...t.a);t.r[k]=v;return true}})}
 Object.setPrototypeOf(C,RC);C.prototype=RC.prototype;window.Chart=C;
